@@ -1,0 +1,23 @@
+/* Basic reset */
+:after
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: 'montserrat', sans-serif
+    /* 
+    'Antonio', sans-serif
+    'Bebas Neue', cursive
+    'Bitter', serif
+    'Crimson Text', serif
+    'Montserrat', sans-serif
+    'Raleway', sans-serif
+    'Roboto', sans-serif 
+    'mascot-mvb-rough-2', sans-serif
+
+*/
+}
