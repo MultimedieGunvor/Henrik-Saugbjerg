@@ -5,10 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div>Hest!</div>
-    
+    <header>
+        <div class="mobileHeader">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <div id="myLinks">
+                <a onclick="myFunction(test='kurserUM')">Kurser</a>
+                <div id="kurserUM">
+                    <a href="">1</a>
+                    <a href="">1</a>
+                    <a href="">1</a>
+                    <a href="">1</a>
+                </div>
+                <a onclick="myFunction(test='servicesUM')">Services</a>
+                <div id="servicesUM">
+                    <a href="">1</a>
+                    <a href="">1</a>
+                    <a href="">1</a>
+                    <a href="">1</a>
+                </div>
+                <a onclick="myFunction(test='SUUM')">Saugbjergs Univers</a>
+                <div id="SUUM">
+                    <a href="">1</a>
+                    <a href="">1</a>
+                    <a href="">1</a>
+                    <a href="">1</a>
+                </div>            </div>
+            <a class="icon" onclick="myFunction(test='myLinks')">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+        </div>
+        
+        <div class="desktopHeader">
+            <div class="logo">
+                <img src="1.JPG" alt="billede">
+            </div>
+            <div class="headerMenu">
+            <div class="header-item">
+                <a href=""><img src="1.JPG" alt="billede">
+                <h1>Kurser</h1></a>
+            </div>
+            <div class="header-item">
+                <a href=""><img src="1.JPG" alt="billede">
+                <h1>Services</h1></a>
+            </div>
+            <div class="header-item">
+                <a href=""><img src="1.JPG" alt="billede">
+                <h1>Saugbjergs Univers</h1></a>
+            </div>
+        </div>
+        </div>
+    </header>
 </body>
+<script src="js.js"></script>
 </html>
