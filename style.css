@@ -1,12 +1,3 @@
-/* Basic reset */
-:after
-:before{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
 :root{
     --font: 'montserrat', sans-serif
     /* 
@@ -18,6 +9,91 @@
     'Raleway', sans-serif
     'Roboto', sans-serif 
     'mascot-mvb-rough-2', sans-serif
-
 */
+}
+header{
+    top: 0;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+.topnav #myLinks, #kurserUM, #servicesUM, #SUUM {
+    display: none;
+}
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.desktopHeader{
+    display: none;
+}
+
+
+@media screen and (min-width: 800px){
+
+}
+
+@media screen and (min-width: 1200px){
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .logo > img{
+        width: 200px;
+        height: 200px;
+    }  
+    .mobileHeader{
+        display: none;
+    }
+    .desktopHeader{
+        display: block;
+    }
+    .headerMenu{
+        display: flex;
+        justify-content: space-around;
+    }
+    .header-item{
+        width: 400px;
+        height: 500px;
+    }
+    .header-item > a{
+        text-decoration: none;
+    }
+    .header-item > a > img{
+        display: flex;
+        width: 100%;
+        height: 80%;
+    }
+    .header-item > a > h1{
+        font-size: 2rem;
+        text-align: center;
+        padding: 5px;
+        color: gold;
+        word-wrap:break-word;
+    }
+  
 }
