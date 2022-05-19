@@ -6,9 +6,10 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
   let kurser = [];
 
-  const kursus = "https://api.jsonbin.io/b/6285fe2025069545a33d2db1/10";
+  const kursus = "https://api.jsonbin.io/b/6285fe2025069545a33d2db1/12";
   async function getKurser() {
       const response = await fetch(kursus);
       const data = await response.json();
