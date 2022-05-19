@@ -6,7 +6,6 @@ function myFunction() {
       x.style.display = "block";
     }
   }
-
   let kurser = [];
 
   const kursus = "https://api.jsonbin.io/b/6285fe2025069545a33d2db1/10";
@@ -18,17 +17,17 @@ function myFunction() {
       getKursus();
 
       }
-      //den her skal være her for at der er en funktion så async funktion getBiler virker
+      //den her skal være her for at der er en funktion så async funktion getKurser virker
 getKurser();
 
 function getKursus(){
-    const sektion = document.getElementById("bil_sektion");
+    const sektion = document.getElementById("kursus_sektion");
     const skabelon = document.getElementById("skabelon_output");
 
     //for of loop der kører for alle de bliver der er i vores database
     for(const kursus of kurser){
 
-        //skaber og udfylder bil kortende
+        //skabes og udfyldes kursus kortende
         const klon = skabelon.content.cloneNode(true);   
         
         const kursustitel = klon.querySelector(".kursusnavn");
