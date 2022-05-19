@@ -25,7 +25,7 @@ function getKursus(){
     const sektion = document.getElementById("kursus_sektion");
     const skabelon = document.getElementById("skabelon_output");
 
-    //for of loop der kører for alle de bliver der er i vores database
+    //for of loop der kører for alle de kurser der er i vores database
     for(const kursus of kurser){
 
         //skabes og udfyldes kursus kortende
