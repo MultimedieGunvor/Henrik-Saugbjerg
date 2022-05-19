@@ -1,5 +1,8 @@
 :root{
-    --font: 'montserrat', sans-serif
+    --free: "Freestyle Script";
+    --bauhaus:"Bauhaus 93";
+    --bgc:#4ac796;
+    --century:"century-gothic, sans-serif";
     /* 
     'Antonio', sans-serif
     'Bebas Neue', cursive
@@ -16,10 +19,10 @@ header{
 }
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--bgc);
     position: relative;
 }
-.topnav #myLinks, #kurserUM, #servicesUM, #SUUM {
+.topnav #Links, #kurserUM, #servicesUM, #SUUM {
     display: none;
 }
 .topnav a {
@@ -29,52 +32,145 @@ header{
     font-size: 17px;
     display: block;
 }
+
 .topnav a.icon {
-    background: black;
+    background-color:var(--bgc);
     display: block;
     position: absolute;
+    padding: 25px;
     right: 0;
     top: 0;
 }
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
+
 .active {
-    background-color: #04AA6D;
+    background-color: var(--bgc);
     color: white;
 }
+
+.active img{
+    width: 100px;
+}
+
+.fa-bars::before{
+    font-size: 40px;
+}
+
 .desktopHeader{
     display: none;
 }
+
+.title{
+    width: 100%;
+    text-align: center;
+}
+
+.title >h1{
+    font-family: var(--bauhaus);
+    color: var(--bgc);
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+.b1{
+    background-image: url(/img/ring.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 500px;
+    width: 100%;
+    color: white;
+}
+
+.b1 > p{
+    padding-top: 70%;
+    padding-right: 90px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: var(--century);
+}
+
+
+.b2{
+    background-image: url(/img/sten.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: 700px;
+    width: 100%;
+    color: var(--bgc);
+}
+
+.b2 > p{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 55%;
+    font-size: 20px;
+    font-family: var(--century);
+}
+
+.b3{
+    background-image: url(/img/citatbillede.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 700px;
+    width: 100%;
+    color: white;
+}
+
+.b3 > p{
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: var(--century);
+}
+
+footer{
+    background-color: var(--bgc);
+    text-align: center;
+    color: white;
+    padding:25px;
+}
+
+ footer a{
+     text-decoration: none;
+     color: white;
+     font-family: var(--century);
+ }
+ footer p{
+     padding-top: 28px;
+     font-size: 20px;
+     font-family: var(--century);
+ }
+
 
  .kurser{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 2px solid #4ac796;
+    border-radius: 105px 50px 105px 50px;
     padding: 15px;
-    margin: 15px 0;
+    margin: 15px;
 }
 
 .kurser img{
-    width: 200px;
+    width: 100%;
 }
 
 .kursusnavn{
-    font-size: 1.5rem;
+    font-size: 24px;
     width: 17rem;
 }
 
 .kursus_detaljer{
-    width: 15rem;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 120px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .kursus_detaljer img{
@@ -82,10 +178,23 @@ header{
     padding-right: 5px;
 }
 
+.kursusnavn{
+    margin-top: 10px;
+}
+
+.startdato{
+    margin-top: 10px;
+}
+
+.ledigpladser{
+    margin-bottom: 10px;
+}
+
+
 .prisogbestil{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     height: 5rem;
 }
@@ -105,8 +214,19 @@ header{
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
+.wrapper h1{
+    font-family: var(--bauhaus);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.wrapper{
+    margin-bottom: 50px;
+}
 
 
 @media screen and (min-width: 800px){
@@ -118,42 +238,122 @@ header{
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 200px;
-        margin-top: 20px;
+        height: 150px;
+        padding-top: 50px;
         margin-bottom: 20px;
+        background-color:var(--bgc);
     }
+
     .logo > img{
-        width: 200px;
-        height: 200px;
+        height: 150px;
     }  
+
     .mobileHeader{
         display: none;
     }
+
     .desktopHeader{
         display: block;
     }
+
     .headerMenu{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
+
     .header-item{
-        width: 400px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
+        margin: 0 25px;
     }
-    .header-item > a{
-        text-decoration: none;
-    }
-    .header-item > a > img{
+
+    .header-item >  img{
         display: flex;
-        width: 100%;
-        height: 80%;
+        width: 200px;
+        margin: 0 auto;
     }
-    .header-item > a > h1{
-        font-size: 2rem;
+
+    .dropMenu-content {
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        min-width: 300px;
+    }
+    
+    .dropMenu {
+        color: black;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        min-width: 100%;
+        height: 60px;
         text-align: center;
-        padding: 5px;
-        color: gold;
-        word-wrap:break-word;
+        padding-top: 40px;
     }
-  
+    .dropMenu p{
+        padding-bottom: 20px;
+    }
+    .dropMenu-content a {
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        font-family: var(--century);
+    }
+    .dropMenu:Hover .dropMenu-content {
+        display: block;
+    } 
+/*     .dropMenu:hover .dropMenu {
+    } */
+    .wrapper{
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+
+    .b3{
+        background-image: url(/img/henrik2.png);
+        background-position: center;
+    }
+
+    .kurser img{
+        width: 200px;
+    }
+
+    .kursus_detaljer img{
+        width: 16px;
+        padding-right: 5px;
+    }
+
+    .kursus_detaljer{
+        width: 19rem;
+        font-size: 20px;
+    }
+
+    .kursusnavn{
+        font-size: 22px;
+        width: 16rem;
+    }
+
+    .kurser{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border: 2px solid #4ac796;
+        border-radius: 70px 20px 70px 20px;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .booking_knap{
+        margin-top: 10px;
+        font-size: 1.35rem;
+        width: 5rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-self: center;
+    }
+
+    
 }
