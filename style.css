@@ -48,6 +48,65 @@ header{
     display: none;
 }
 
+ .kurser{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.kurser img{
+    width: 200px;
+}
+
+.kursusnavn{
+    font-size: 1.5rem;
+    width: 17rem;
+}
+
+.kursus_detaljer{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+    font-size: 16px;
+}
+
+.kursus_detaljer img{
+    width: 16px;
+}
+
+.prisogbestil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+.pris{
+    font-size: 1.3rem;
+}
+
+.booking_knap{
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    width: 7rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 
 @media screen and (min-width: 800px){
 
