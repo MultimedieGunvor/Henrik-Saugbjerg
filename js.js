@@ -31,7 +31,7 @@ function getKursus(){
         //skaber og udfylder bil kortende
         const klon = skabelon.content.cloneNode(true);   
         
-        const bilMM = klon.querySelector(".bilMM");
+        const kursustitel = klon.querySelector(".kursusnavn");
         const billedtag = klon.querySelector("img");
         const startdato = klon.querySelector(".startdato");
         const tidspunkt = klon.querySelector(".tidspunkt");
@@ -44,7 +44,7 @@ function getKursus(){
         //udfyldning af data til variablerne i templaten
         billedtag.src = kursus.billede;
         billedtag.alt = kursus.billedetekst;
-        bilMM.textContent = kursus.kursusnavn;
+        kursustitel.textContent = kursus.kursusnavn;
         startdato.textContent =  kursus.startdato;
         startdato.insertAdjacentHTML("afterbegin", '<img src="img/kalender.png" alt="kalender">')
         tidspunkt.textContent =  kursus.tidspunkt;
