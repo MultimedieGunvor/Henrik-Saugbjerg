@@ -25,6 +25,7 @@ header{
     overflow: hidden;
     background-color: var(--bgc);
     position: relative;
+    font-family: var(--century);
 }
 .topnav #Links, #kurserUM, #servicesUM, #SUUM {
     display: none;
@@ -254,9 +255,16 @@ footer{
 .b4 > p{
     padding-top: 20px;
     padding-left: 20px;
-    padding-right: 55%;
     font-size: 20px;
     font-family: var(--century);
+}
+#b4_luft {
+    height: 300px;
+}
+#b4_fortsat {
+    padding-top: 10px;
+    padding-left: 30px;
+    color: white;
 }
 .slideshow {
     display: flex;
