@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forside | Guldsmed Henrik Saugbjerg</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,31 +17,30 @@
         <div class="mobileHeader">
             <!-- Top Navigation Menu -->
             <div class="topnav">
-            <a href="#home" class="active"><img src="/img/Logo-hvid.png" alt="logo"></a>
+            <a href="index.html" class="active"><img src="/img/Logo-hvid.png" alt="logo"></a>
             <div id="Links">
-                <a onclick="myFunction(test='kurserUM')">Kurser</a>
+                <a class="RM" onclick="mobileHeader(test='kurserUM')">Kurser</a>
                 <div id="kurserUM">
                     <a href="">1</a>
                     <a href="">1</a>
                     <a href="">1</a>
                     <a href="">1</a>
                 </div>
-                <a onclick="myFunction(test='servicesUM')">Services</a>
+                <a class="RM" onclick="mobileHeader(test='servicesUM')">Services</a>
                 <div id="servicesUM">
                     <a href="">1</a>
                     <a href="">1</a>
                     <a href="">1</a>
                     <a href="">1</a>
                 </div>
-                <a onclick="myFunction(test='SUUM')">Saugbjergs Univers</a>
+                <a class="RM" onclick="mobileHeader(test='SUUM')">Saugbjergs Univers</a>
                 <div id="SUUM">
-                    <a href="">1</a>
-                    <a href="">1</a>
-                    <a href="">1</a>
-                    <a href="">1</a>
+                    <a href="om_os.html">Om Henrik Saugbjerg</a>
+                    <a href="">Billedgalleri</a>
+                    <a href="">Butiksinformationer</a>
                 </div>
             </div>
-            <a class="icon" onclick="myFunction(test='Links')">
+            <a class="icon" onclick="mobileHeader(test='Links')">
                 <i id="burger" class="fa fa-bars"></i>
             </a>
             </div>
@@ -53,7 +52,7 @@
             <div class="headerMenu">
                 <div class="header-item">
                     <img src="img/Sav.svg" alt="billede">
-                        <div class="dropMenu"><p>Kurser</p>
+                        <div class="dropMenu"><p class="RM">Kurser</p>
                         <div class="dropMenu-content">
                                 <a href="Printere for begyndere.HTML">Printere for begyndere</a>
                                 <a href="#">Printere for erfarne</a>
@@ -66,7 +65,7 @@
                         
             <div class="header-item">
                 <img src="img/Ring.svg" alt="billede">
-                    <div class="dropMenu"><p>Services</p>
+                    <div class="dropMenu"><p class="RM">Services</p>
                     <div class="dropMenu-content">
                             <a href="Printere for begyndere.HTML">Printere for begyndere</a>
                             <a href="#">Printere for erfarne</a>
@@ -78,13 +77,11 @@
             </div>
             <div class="header-item">
                 <img src="img/Planet.svg" alt="billede">
-                        <div class="dropMenu"><p>Saugbjergs Univers</p>
+                        <div class="dropMenu"><p class="RM">Saugbjergs Univers</p>
                         <div class="dropMenu-content">
-                                <a href="Printere for begyndere.HTML">Printere for begyndere</a>
-                                <a href="#">Printere for erfarne</a>
-                                <a href="#">Nye printere på markedet</a>
-                                <a href="#">Veligeholdelse</a>
-                                <a href="#">udstyr</a>
+                                <a href="om_os.html">Om Henrik Saugbjerg</a>
+                                <a href="#">Billedgalleri</a>
+                                <a href="#">Butiksinformationer</a>
                         </div>
                     </div>                
                 </div>
@@ -110,6 +107,7 @@
         </div>
         <div class="b3">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper eu odio et bibendum. Cras vestibulum nunc non diam rutrum, non sagittis urna consectetur. Phasellus a purus ut sapien hendrerit gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p class="signatur">Henrik Saugbjerg</p>
         </div>
     </div>
     </main>
