@@ -2,7 +2,7 @@
     --free: "Freestyle Script";
     --bauhaus:"Bauhaus 93";
     --bgc:#4ac796;
-    --century:"century-gothic, sans-serif";
+    --century:"century-gothic";
     /* 
     'Antonio', sans-serif
     'Bebas Neue', cursive
@@ -13,6 +13,10 @@
     'Roboto', sans-serif 
     'mascot-mvb-rough-2', sans-serif
 */
+}
+
+body {
+    font-family: var(--century);
 }
 header{
     top: 0;
@@ -57,6 +61,9 @@ header{
 
 .desktopHeader{
     display: none;
+}
+.RM {
+    font-family: var(--century);
 }
 
 .title{
@@ -124,7 +131,11 @@ header{
     font-size: 20px;
     font-family: var(--century);
 }
-
+.b3 > .signatur {
+    font-family: var(--free);
+    font-size: 40px;
+    padding-top: 20px;
+}
 footer{
     background-color: var(--bgc);
     text-align: center;
@@ -228,6 +239,64 @@ footer{
     margin-bottom: 50px;
 }
 
+/* Styling til om os-siden */
+
+.b4{
+    background-image: url(/img/Solskitser.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: 700px;
+    width: 100%;
+    color: var(--bgc);
+}
+
+.b4 > p{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 55%;
+    font-size: 20px;
+    font-family: var(--century);
+}
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+button {
+    margin: 20px;
+    background-color: var(--bgc);
+    color: white;
+    border: none;
+    border-radius: 25px 10px;
+    width: 130px;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: var(--century);
+    font-size: 20px;
+}
+#slidebillede {
+    max-width: 80%;
+}
+.b6{
+    background-image: url(/img/Butiksvindue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 500px;
+    width: 100%;
+    color: white;
+}
+
+.b6 > p{
+    padding-top: 70%;
+    padding-right: 90px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: var(--century);
+}
 
 @media screen and (min-width: 800px){
 
