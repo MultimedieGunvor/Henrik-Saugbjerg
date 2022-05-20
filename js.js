@@ -1,4 +1,4 @@
-function myFunction() {
+function mobileHeader() {
     var x = document.getElementById(test);
     if (x.style.display === "block") {
       x.style.display = "none";
@@ -9,9 +9,9 @@ function myFunction() {
 
   let kurser = [];
 
-  const kursus = "https://api.jsonbin.io/b/6285fe2025069545a33d2db1/12";
+  const kursusinfo = "https://api.jsonbin.io/b/6285fe2025069545a33d2db1/12";
   async function getKurser() {
-      const response = await fetch(kursus);
+      const response = await fetch(kursusinfo);
       const data = await response.json();
       console.log(data);
       kurser = data.kursusliste;
@@ -58,3 +58,38 @@ function getKursus(){
         sektion.appendChild(klon);
     }
 }
+//Slideshow
+function gaaFremad() {
+  if (billedIndeks < billedliste.length - 1) {
+      billedIndeks++;
+  } else {
+      billedIndeks = 0;
+  }
+
+  const slidefoto = document.getElementById("slidebillede");
+  slidefoto.src = billedliste[billedIndeks];
+}
+
+function gaaTilbage() {
+  if (billedIndeks > 0) {
+      billedIndeks--;
+  } else {
+      billedIndeks = billedliste.length - 1;
+  }
+
+  const slidefoto = document.getElementById("slidebillede");
+  slidefoto.src = billedliste[billedIndeks];
+}
+
+const billedliste = ["/img/Galleri-signetring.png", "/img/Galleri-torshammer.png", "/img/Galleri-vielsesringe.png"]; //Global variabel
+let billedIndeks = 0; //Global variabel
+
+const fremad = document.getElementById("frem");
+fremad.addEventListener("click", function () {
+  gaaFremad();
+})
+
+const tilbage = document.getElementById("tilbage");
+tilbage.addEventListener("click", function () {
+  gaaTilbage();
+})
