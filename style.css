@@ -161,7 +161,11 @@ footer{
      font-size: 20px;
      font-family: var(--century);
  }
-
+address {
+    font-style: normal;
+    font-family: var(--century);
+    font-size: 20px;
+}
 
  .kurser{
     display: flex;
@@ -300,7 +304,7 @@ button {
     color: white;
 }
 #b6_luft {
-    height: 100px;
+    height: 50px;
 }
 .aabent {
     display: flex;
@@ -312,19 +316,26 @@ button {
 }
 .dage > p, .tider > p {
     font-family: var(--century);
+    font-size: 20px;
+    text-align: center;
 }
 .b6 > p{
     padding-top: 70%;
-    padding-right: 90px;
-    padding-left: 20px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: var(--century);
+}
+.aabent_titel {
+    width: 100%;
+    text-align: center;
 }
 .geolocating {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#map-link {
+    font-family: var(--century);
 }
 
 @media screen and (min-width: 800px){
