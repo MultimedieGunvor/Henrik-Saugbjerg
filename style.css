@@ -297,13 +297,32 @@ button {
     width: 100%;
     color: white;
 }
-
+#b6_luft {
+    height: 100px;
+}
+.aabent {
+    display: flex;
+    margin: 10px;
+}
+.dage, .tider {
+    width: 50%;
+    color: var(--bgc);
+}
+.dage > p, .tider > p {
+    font-family: var(--century);
+}
 .b6 > p{
     padding-top: 70%;
     padding-right: 90px;
     padding-left: 20px;
     font-size: 20px;
     font-family: var(--century);
+}
+.geolocating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 800px){
@@ -430,6 +449,9 @@ button {
         padding: 0.5rem;
         display: flex;
         justify-self: center;
+    }
+    button {
+        cursor: pointer;
     }
 
     
