@@ -143,7 +143,6 @@ header{
     font-family: var(--free);
     font-size: 40px;
     padding-top: 20px;
-}
 footer{
     background-color: var(--bgc);
     text-align: center;
@@ -247,13 +246,26 @@ address {
 }
 
 /* Styling til om os-siden */
-
+.b5 {
+    background-image: url(/img/Top-om\ os.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: 300px;
+    width: 100%;
+    color: var(--bgc);
+}
+.b5 > h1 {
+    margin-top: 50px;
+    padding-top: 70px;
+    color: white;
+}
 .b4{
     background-image: url(/img/Solskitser.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
-    min-height: 700px;
+    background-position: bottom right;
+    min-height: 600px;
     width: 100%;
     color: var(--bgc);
 }
@@ -264,13 +276,12 @@ address {
     font-size: 20px;
     font-family: var(--century);
 }
-#b4_luft {
-    height: 300px;
-}
 #b4_fortsat {
     padding-top: 10px;
     padding-left: 30px;
-    color: white;
+    color: var(--bgc);
+    font-size: 20px;
+    font-family: var(--century);
 }
 .slideshow {
     display: flex;
@@ -280,7 +291,10 @@ address {
     margin-top: 20px;
     width: 100%;
 }
-button {
+.button_box {
+    display: flex;
+}
+.button, button {
     margin: 20px;
     background-color: var(--bgc);
     color: white;
@@ -291,6 +305,9 @@ button {
     text-align: center;
     font-family: var(--century);
     font-size: 20px;
+}
+.button > img {
+    max-width: 50%;
 }
 #slidebillede {
     max-width: 80%;
@@ -337,6 +354,7 @@ button {
 #map-link {
     font-family: var(--century);
 }
+
 
 @media screen and (min-width: 800px){
 
@@ -472,7 +490,7 @@ button {
         display: flex;
         justify-self: center;
     }
-    button {
+    button, .button {
         cursor: pointer;
     }
 
