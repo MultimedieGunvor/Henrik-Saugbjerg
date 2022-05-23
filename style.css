@@ -2,6 +2,7 @@
     --free: "Freestyle Script";
     --bauhaus:"Bauhaus 93";
     --bgc:#4ac796;
+    --bgc2:#23845d;
     --century:"century-gothic";
     /* 
     'Antonio', sans-serif
@@ -29,6 +30,9 @@ header{
 }
 .topnav #Links, #kurserUM, #servicesUM, #SUUM {
     display: none;
+}
+#kurserUM, #servicesUM, #SUUM {
+    background-color: var(--bgc2);
 }
 .topnav a {
     color: white;
@@ -93,6 +97,7 @@ header{
     padding-right: 90px;
     padding-left: 20px;
     font-size: 20px;
+    line-height: 30px;
     font-family: var(--century);
 }
 
@@ -112,6 +117,7 @@ header{
     padding-left: 20px;
     padding-right: 55%;
     font-size: 20px;
+    line-height: 30px;
     font-family: var(--century);
 }
 
@@ -130,6 +136,7 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
+    line-height: 30px;
     font-family: var(--century);
 }
 .b3 > .signatur {
@@ -164,7 +171,7 @@ footer{
     border: 2px solid #4ac796;
     border-radius: 105px 50px 105px 50px;
     padding: 15px;
-    margin: 15px;
+    margin: 30px;
 }
 
 .kurser img{
@@ -192,16 +199,11 @@ footer{
 
 .kursusnavn{
     margin-top: 10px;
+    line-height: 30px;
 }
-
-.startdato{
-    margin-top: 10px;
+.varighed, .tidspunkt, .startdato, .ledigpladser, .pris{
+    line-height: 40px;
 }
-
-.ledigpladser{
-    margin-bottom: 10px;
-}
-
 
 .prisogbestil{
     display: flex;
