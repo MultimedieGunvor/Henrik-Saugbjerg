@@ -143,6 +143,7 @@ header{
     font-family: var(--free);
     font-size: 40px;
     padding-top: 20px;
+}
 footer{
     background-color: var(--bgc);
     text-align: center;
