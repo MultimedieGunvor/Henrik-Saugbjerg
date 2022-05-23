@@ -93,3 +93,36 @@ const tilbage = document.getElementById("tilbage");
 tilbage.addEventListener("click", function () {
   gaaTilbage();
 })
+
+// Geolocation og ruteplanlægning
+function geoFindMe() {
+
+  const status = document.querySelector('#status');
+  const mapLink = document.querySelector('#map-link');
+
+  mapLink.href = '';
+  mapLink.textContent = '';
+
+  function success(position) {
+    const latitude  = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    status.textContent = '';
+    mapLink.href = `https://www.google.com/maps/dir/?api=1&origin=${latitude}/${longitude}&destination=56.15439/10.20335&travelmode=driving`;
+    mapLink.textContent = `Vis min rute`;
+  }
+
+  function error() {
+    status.textContent = 'Vi kunne ikke finde din placering';
+  }
+
+  if(!navigator.geolocation) {
+    status.textContent = 'Din browser understøtter ikke geolocation';
+  } else {
+    status.textContent = 'Finder…';
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+
+}
+
+document.querySelector('#find-mig').addEventListener('click', geoFindMe);
