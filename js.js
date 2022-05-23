@@ -1,8 +1,14 @@
 function mobileHeader() {
+    var kurserUM = document.getElementById("kurserUM");
+    var servicesUM = document.getElementById("servicesUM");
+    var SUUM = document.getElementById("SUUM");
     var x = document.getElementById(test);
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
+      kurserUM.style.display = "none";
+      servicesUM.style.display = "none";
+      SUUM.style.display = "none";
       x.style.display = "block";
     }
   }
