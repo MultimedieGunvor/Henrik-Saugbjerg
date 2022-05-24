@@ -438,6 +438,32 @@ table, th, td {
     margin-left: 120px;  
 }
 
+/* Styling til services-siden */
+.ups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ups > p {
+    color: var(--bgc);
+    font-family: var(--century);
+    font-size: 20px;
+    padding: 10px;
+}
+.ups > a {
+    margin: 20px;
+    background-color: var(--bgc);
+    color: white;
+    border: none;
+    border-radius: 25px 10px;
+    width: 130px;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: var(--century);
+    font-size: 20px;
+}
+
 @media screen and (min-width: 800px){
     .b5 {
         background-repeat: no-repeat;
