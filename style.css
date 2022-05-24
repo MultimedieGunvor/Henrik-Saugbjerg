@@ -352,6 +352,9 @@ address {
     justify-content: center;
     align-items: center;
 }
+#find-mig {
+    background-color: #FF7137;
+}
 #map-link {
     font-family: var(--century);
 }
@@ -436,6 +439,40 @@ table, th, td {
 }
 
 @media screen and (min-width: 800px){
+    .b5 {
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 350px;
+        width: 100%;
+    }
+    .b4 > p {
+        padding: 20px 550px 0px 20px;
+        font-size: 25px;
+        line-height: 1.4;
+    }
+    #b4_fortsat {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+    #slidebillede {
+        max-width: 60%;
+    }
+    .b6{
+        background-size: auto;
+        min-height: 500px;
+        width: 100%;
+        color: white;
+    }
+    #b6_luft {
+        height: 60px;
+    }
+    .dage > p, .tider > p {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+    #find-mig {
+        font-size: 25px;
+    }
 
 }
 
@@ -531,6 +568,9 @@ table, th, td {
         background-position: center;
     }
 
+    .b6 {
+        color: var(--bgc);
+    }
     .kurser img{
         width: 200px;
     }
