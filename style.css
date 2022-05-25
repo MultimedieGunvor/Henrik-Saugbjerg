@@ -57,7 +57,7 @@ header{
 }
 
 .active img{
-    width: 100px;
+    height: 70px;
 }
 
 .fa-bars::before{
@@ -81,6 +81,10 @@ header{
     color: var(--bgc);
     margin: 40px 0;
     font-size: 40px;
+}
+
+#priser{
+    margin: 0 0 40px 0;
 }
 
 .b1{
@@ -162,6 +166,7 @@ footer{
      font-family: var(--century);
  }
 address {
+    padding-top: 28px;
     font-style: normal;
     font-family: var(--century);
     font-size: 20px;
@@ -258,8 +263,9 @@ address {
 }
 .b5 > h1 {
     margin-top: 50px;
-    padding-top: 70px;
+    padding-top: 80px;
     color: white;
+    font-size: 45px;
 }
 .b4{
     background-image: url(/img/Solskitser.png);
@@ -272,16 +278,16 @@ address {
 }
 
 .b4 > p{
-    padding-top: 20px;
     padding-left: 20px;
     font-size: 20px;
     font-family: var(--century);
 }
 #b4_fortsat {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 30px;
     color: var(--bgc);
     font-size: 20px;
+    padding-right: 30px;
     font-family: var(--century);
 }
 .slideshow {
@@ -399,7 +405,7 @@ address {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    min-height: 700px;
+    min-height: 600px;
     width: 100%;
     color: var(--bgc);
 }
@@ -465,39 +471,112 @@ table, th, td {
 }
 
 @media screen and (min-width: 800px){
+    .active{
+        height: 100%;
+        padding: 0px;
+    }
+
+    .active img{
+        padding-top: 14px;
+        padding-left: 16px;
+        height: 100px;
+    }
+
+    .fa-bars::before {
+        font-size: 50px;
+    }
+
+    .topnav a.icon{
+        padding: 50px 50px 0 0;
+    }
+
+    .b1 p{
+        padding-top: 300px;
+        width: 40%;
+    }
+
+    .b2 p{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 50%;
+    font-size: 30px;
+    line-height: 50px;
+    }
+
+    .b3{
+        background-image: url(/img/henrik2.png);
+        background-position: center;
+    }
+
+    .b3 p{
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 30px;
+    }
+
     .b5 {
         background-repeat: no-repeat;
         background-position: center;
         min-height: 350px;
         width: 100%;
     }
+
+    .b5 h1{
+        font-size: 50px;
+    }
+
     .b4 > p {
         padding: 20px 550px 0px 20px;
         font-size: 25px;
         line-height: 1.4;
     }
+
     #b4_fortsat {
         font-size: 25px;
         line-height: 1.4;
     }
+
     #slidebillede {
         max-width: 60%;
     }
+
     .b6{
         background-size: auto;
         min-height: 500px;
         width: 100%;
         color: white;
     }
+
     #b6_luft {
         height: 60px;
     }
+
     .dage > p, .tider > p {
         font-size: 25px;
         line-height: 1.4;
     }
+
+    .b7 p{
+        padding-top: 90px;
+        padding-right: 50%;
+        font-size: 30px;
+    }
+
+    #priser{
+        margin-top: 40px;
+    }
+
     #find-mig {
         font-size: 25px;
+    }
+
+    footer p{
+        padding-top: 28px;
+        font-size: 30px;
+        font-family: var(--century);
+    }
+    footer address{
+        font-size: 30px;
     }
 
 }
@@ -637,6 +716,40 @@ table, th, td {
     }
     button, .button {
         cursor: pointer;
+    }
+
+    .b7 p{
+        padding-right: 60%;
+    }
+
+    .gif{
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+    
+    .b8{
+        min-height: 800px;
+    }
+
+    #priser{
+        margin-top: 0;
+    }
+
+    .center{
+        min-width: 600px;
+        min-height: 400px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    #tilmeldto{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        text-align: center;
+        padding-left: 30px;
     }
 
     
