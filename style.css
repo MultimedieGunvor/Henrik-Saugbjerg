@@ -34,6 +34,9 @@ header{
 #kurserUM, #servicesUM, #SUUM {
     background-color: var(--bgc2);
 }
+#kurserUM a, #servicesUM a, #SUUM a {
+    font-family: var(--century);
+}
 .topnav a {
     color: white;
     padding: 14px 16px;
@@ -136,7 +139,7 @@ header{
 
 .b3 > p{
     text-align: center;
-    padding-top: 150px;
+    padding-top: 120px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
@@ -432,18 +435,18 @@ table, th, td {
   }
 
 #tilmeldto{
-    margin: 20px;
+    margin: 20px auto;
     background-color:#FF7137;
     color: white;
     border: none;
     border-radius: 25px 10px;
-    width: 130px;
+    /* width: 130px; */
     padding: 20px 0px;
     text-align: center;
     font-family: var(--century);
     font-size: 20px;
     font-weight: 800;
-    margin-left: 120px;  
+    /* margin-left: 120px;   */
 }
 
 /* Styling til services-siden */
@@ -487,22 +490,32 @@ table, th, td {
     .fa-bars::before {
         font-size: 50px;
     }
-
+    .topnav a {
+        font-size: 25px;
+    }
     .topnav a.icon{
         padding: 50px 50px 0 0;
     }
-
+    .b1 {
+        display: flex;
+        justify-content: flex-end;
+    }
     .b1 p{
-        padding-top: 300px;
+        padding-top: 50px;
+        padding-right: 30px;
         width: 40%;
+        font-size: 25px;
+        line-height: 1.4;
+        color: var(--bgc);
+        text-align: right;
     }
 
     .b2 p{
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 50%;
-    font-size: 30px;
-    line-height: 50px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 50%;
+        font-size: 25px;
+        line-height: 1.4;
     }
 
     .b3{
@@ -511,9 +524,9 @@ table, th, td {
     }
 
     .b3 p{
-    padding-left: 250px;
-    padding-right: 250px;
-    font-size: 30px;
+        padding: 90px 250px 0px;
+        font-size: 25px;
+        line-height: 1.4;
     }
 
     .b5 {
@@ -563,7 +576,12 @@ table, th, td {
         padding-right: 50%;
         font-size: 30px;
     }
-
+    #tilmeld{
+        margin-left: 500px;
+        margin-top: 0;
+        background-color:#FF7137;
+        color: white;
+    }
     #priser{
         margin-top: 40px;
     }
@@ -574,11 +592,11 @@ table, th, td {
 
     footer p{
         padding-top: 28px;
-        font-size: 30px;
+        font-size: 25px;
         font-family: var(--century);
     }
     footer address{
-        font-size: 30px;
+        font-size: 25px;
     }
 
 }
@@ -683,6 +701,9 @@ table, th, td {
         background-image: url(/img/henrik2.png);
         background-position: center;
     }
+    .b3 p {
+        padding-top: 150px;
+    }
 
     .b6 {
         color: var(--bgc);
@@ -692,14 +713,9 @@ table, th, td {
         padding-top: 75px;
         width: 330px;
     }
-
     #tilmeld{
         margin-left: 600px;
-        margin-top: 0;
-        background-color:#FF7137;
-        color: white;
     }
-
     .kurser img{
         width: 200px;
     }
