@@ -708,8 +708,8 @@ table, th, td {
        color: var(--bgc);
        margin-right: 0px;
        padding-right: 0px;
-       font-size: 30px;
-       line-height: 40px;
+       font-size: 25px;
+       line-height: 1.4;
     }
 
     .b3{
