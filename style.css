@@ -193,6 +193,9 @@ address {
 .kursusnavn{
     font-size: 24px;
     width: 17rem;
+    margin-top: 10px;
+    line-height: 30px;
+    font-family: var(--century);
 }
 
 .kursus_detaljer{
@@ -209,12 +212,9 @@ address {
     padding-right: 5px;
 }
 
-.kursusnavn{
-    margin-top: 10px;
-    line-height: 30px;
-}
 .varighed, .tidspunkt, .startdato, .ledigpladser, .pris{
     line-height: 40px;
+    font-family: var(--century);
 }
 
 .prisogbestil{
@@ -246,6 +246,7 @@ address {
 
 .wrapper h1{
     font-family: var(--bauhaus);
+    color: var(--bgc);
     text-align: center;
     font-size: 50px;
     margin-top: 100px;
@@ -423,6 +424,7 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 10px;
+    font-family: var(--century);
   }
   a {
       color: black;
@@ -574,7 +576,8 @@ table, th, td {
     .b7 p{
         padding-top: 90px;
         padding-right: 50%;
-        font-size: 30px;
+        font-size: 25px;
+        line-height: 1.4;
     }
     #tilmeld{
         margin-left: 500px;
@@ -596,6 +599,12 @@ table, th, td {
         font-family: var(--century);
     }
     footer address{
+        font-size: 25px;
+    }
+    .ups > p {
+        font-size: 25px;
+    }
+    .ups > a {
         font-size: 25px;
     }
 
