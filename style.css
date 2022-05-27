@@ -219,7 +219,7 @@ address {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 5rem;
+    height: 6rem;
 }
 
 .pris{
@@ -227,17 +227,18 @@ address {
 }
 
 .booking_knap{
-    background-color: green;
+    border-radius: 25px 10px;
+    font-size: 20px;
+    background-color: #FF7137;
     color: white;
-    font-size: 1rem;
+    font-family: var(--century);
     text-decoration: none;
     text-align: center;
-    width: 7rem;
-    padding: 0.5rem;
-    border: 1px solid black;
-    border-radius: 5px;
+    width: 6rem;
+    padding: 15px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 100%;
+    right: 0;
 }
 
 .wrapper h1{
@@ -432,7 +433,8 @@ table, th, td {
 
 #tilmeldto{
     margin: 20px;
-    color: #fff;
+    background-color:#FF7137;
+    color: white;
     border: none;
     border-radius: 25px 10px;
     width: 130px;
@@ -509,8 +511,8 @@ table, th, td {
     }
 
     .b3 p{
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 250px;
+    padding-right: 250px;
     font-size: 30px;
     }
 
@@ -668,6 +670,15 @@ table, th, td {
         background-color: white;
     }
 
+    .b1 p{
+       padding-left: 45%;
+       color: var(--bgc);
+       margin-right: 0px;
+       padding-right: 0px;
+       font-size: 30px;
+       line-height: 40px;
+    }
+
     .b3{
         background-image: url(/img/henrik2.png);
         background-position: center;
@@ -676,6 +687,19 @@ table, th, td {
     .b6 {
         color: var(--bgc);
     }
+
+    .b7 p{
+        padding-top: 75px;
+        width: 330px;
+    }
+
+    #tilmeld{
+        margin-left: 600px;
+        margin-top: 0;
+        background-color:#FF7137;
+        color: white;
+    }
+
     .kurser img{
         width: 200px;
     }
@@ -708,18 +732,17 @@ table, th, td {
 
     .booking_knap{
         margin-top: 10px;
-        font-size: 1.35rem;
+        border: none;
+        border-radius: 25px 10px;
+        font-size: 20px;
+        background-color: #FF7137;
         width: 5rem;
-        padding: 0.5rem;
+        padding: 15px;
         display: flex;
         justify-self: center;
     }
     button, .button {
         cursor: pointer;
-    }
-
-    .b7 p{
-        padding-right: 60%;
     }
 
     .gif{
@@ -742,6 +765,7 @@ table, th, td {
         min-height: 400px;
         text-align: center;
         font-size: 24px;
+        font-family: var(--century);
     }
 
     #tilmeldto{
@@ -750,6 +774,7 @@ table, th, td {
         display: flex;
         text-align: center;
         padding-left: 30px;
+        background-color: #FF7137;
     }
 
     
