@@ -45,20 +45,18 @@ function getKursus(){
         const ledigpladser = klon.querySelector(".ledigpladser");
         const pris = klon.querySelector(".pris");
       
-            const link = klon.querySelector("a");
-
         //udfyldning af data til variablerne i templaten
         billedtag.src = kursus.billede;
         billedtag.alt = kursus.billedetekst;
         kursustitel.textContent = kursus.kursusnavn;
         startdato.textContent =  kursus.startdato;
-        startdato.insertAdjacentHTML("afterbegin", '<img src="img/kalender.png" alt="kalender">')
+        startdato.insertAdjacentHTML("afterbegin", '<img src="img/kalender.png" alt="kalender">');
         tidspunkt.textContent =  kursus.tidspunkt;
-        tidspunkt.insertAdjacentHTML("afterbegin", '<img src="img/ur.png" alt="ur">')
+        tidspunkt.insertAdjacentHTML("afterbegin", '<img src="img/ur.png" alt="ur">');
         varighed.textContent = "varighed: " + kursus.varighed;
-        varighed.insertAdjacentHTML("afterbegin", '<img src="img/timeglas.png" alt="timeglas">')
+        varighed.insertAdjacentHTML("afterbegin", '<img src="img/timeglas.png" alt="timeglas">');
         ledigpladser.textContent = "ledige pladser: " + kursus.ledigpladser;
-        ledigpladser.insertAdjacentHTML("afterbegin", '<img src="img/brugericon.png" alt="brugericon">')
+        ledigpladser.insertAdjacentHTML("afterbegin", '<img src="img/brugericon.png" alt="brugericon">');
         pris.textContent = "DKK " + kursus.pris;
          
         sektion.appendChild(klon);
@@ -93,12 +91,12 @@ let billedIndeks = 0; //Global variabel
 const fremad = document.getElementById("frem");
 fremad.addEventListener("click", function () {
   gaaFremad();
-})
+});
 
 const tilbage = document.getElementById("tilbage");
 tilbage.addEventListener("click", function () {
   gaaTilbage();
-})
+});
 
 // Geolocation og ruteplanlægning
 function geoFindMe() {
