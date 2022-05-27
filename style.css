@@ -72,6 +72,7 @@ header{
 }
 .RM {
     font-family: var(--century);
+    color: var(--bgc2);
 }
 
 .title{
@@ -285,6 +286,7 @@ address {
 .b4 > p{
     padding-left: 20px;
     font-size: 20px;
+    line-height: 30px;
     font-family: var(--century);
 }
 #b4_fortsat {
@@ -292,6 +294,7 @@ address {
     padding-left: 30px;
     color: var(--bgc);
     font-size: 20px;
+    line-height: 30px;
     padding-right: 30px;
     font-family: var(--century);
 }
@@ -346,6 +349,7 @@ address {
 .dage > p, .tider > p {
     font-family: var(--century);
     font-size: 20px;
+    line-height: 30px;
     text-align: center;
 }
 .b6 > p{
@@ -388,6 +392,7 @@ address {
     padding-left: 20px;
     font-size: 20px;
     font-family: var(--century);
+    line-height: 30px;
 }
 
 #tilmeld{
@@ -675,7 +680,7 @@ table, th, td {
         font-size: 40px;
     }
     .dropMenu-content a {
-        color: black;
+        color: var(--bgc2);
         padding: 16px;
         text-decoration: none;
         display: block;
@@ -688,6 +693,7 @@ table, th, td {
 
     .dropMenu-content a:hover{
         background-color: var(--bgc);
+        color: white;
     }
 
     .wrapper{
