@@ -78,7 +78,6 @@ header{
 .title{
     width: 100%;
     text-align: center;
-    font-family: var(--century);
 }
 
 .title >h1{
@@ -431,7 +430,6 @@ table, th, td {
     border-collapse: collapse;
     padding: 10px;
     font-family: var(--century);
-    
   }
   a {
       color: black;
@@ -458,70 +456,6 @@ table, th, td {
     /* margin-left: 120px;   */
 }
 
-  .row {
-    display: block;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0 25px;
-    margin-bottom: 30px;
-  }
-  
-  .card {
-    width: 100%;    
-    height: 100%;          
-    display: flex;             
-    flex-direction: column;       
-    border: 2px solid #4ac796;    
-    border-radius: 70px 20px 70px 20px;
-    overflow: hidden;             
-    margin: 5px;    
-    margin-bottom: 20px;             
-  }
-  
-  .card-header {
-    color: #000;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 600;
-    border-bottom: 1px solid #4ac796;
-    background-color: #a6e8cd;
-    padding: 15px 10px;
-  }
-  
-  .card-main {
-    display: flex;              
-    flex-direction: column;     
-    justify-content: center;    
-    align-items: center;       
-    padding: 15px 0;           
-  }
-
-  .anmelder{
-      max-width: 70%;
-      border-radius: 500px;
-  }
-  
-  .material-icons {
-    font-size: 36px;
-    color: #4ac796;
-    margin: 5px;
-    
-  }
-  
-  .main-description {
-    color: #333;
-    font-size: 12px;
-    text-align: center;
-  }
-
-  p{
-      padding: 0px 10px 0px;
-      font-family: var(--century);
-      font-size: 20px;
-      line-height: 30px;
-  }
-  
 /* Styling til services-siden */
 .ups {
     display: flex;
@@ -535,6 +469,9 @@ table, th, td {
     font-size: 20px;
     padding: 10px;
 }
+.ups img {
+    max-width: 95%;
+}
 .ups > a {
     margin: 20px;
     background-color: var(--bgc);
@@ -547,8 +484,6 @@ table, th, td {
     font-family: var(--century);
     font-size: 20px;
 }
-
-
 
 @media screen and (min-width: 800px){
     .active{
@@ -658,26 +593,6 @@ table, th, td {
         background-color:#FF7137;
         color: white;
     }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .anmelder{
-        width: 50%;
-    }
-
-    .card {
-        width: 800px;
-        height: 700px;
-    }
-
-    p{
-        padding: 10px 30px 0px;
-    }
-
     #priser{
         margin-top: 40px;
     }
@@ -875,8 +790,6 @@ table, th, td {
         min-height: 800px;
     }
 
-
-    
     #priser{
         margin-top: 0;
     }
