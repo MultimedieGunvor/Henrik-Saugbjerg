@@ -478,9 +478,10 @@ table, th, td {
   }
   
   .card-header {
-    color: #000;
+    color: var(--bgc2);
     text-align: center;
-    font-size: 12px;
+    font-family: var(--century);
+    font-size: 20px;
     font-weight: 600;
     border-bottom: 1px solid #4ac796;
     background-color: #a6e8cd;
