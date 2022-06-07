@@ -91,7 +91,9 @@ header{
     margin: 0 0 40px 0;
 }
 
-.b1{
+.b1, 
+.b9,
+.b10 {
     background-image: url(/img/ring.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -100,7 +102,9 @@ header{
     color: white;
 }
 
-.b1 > p{
+.b1 > p,
+.b9 > p,
+.b10 > p {
     padding-top: 70%;
     padding-right: 90px;
     padding-left: 20px;
@@ -129,7 +133,8 @@ header{
     font-family: var(--century);
 }
 
-.b3{
+.b3,
+.b11 {
     background-image: url(/img/citatbillede.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -138,7 +143,8 @@ header{
     color: white;
 }
 
-.b3 > p{
+.b3 > p,
+.b11 > p {
     text-align: center;
     padding-top: 120px;
     padding-left: 20px;
@@ -463,9 +469,9 @@ table, th, td {
     align-items: center;
     padding: 0 25px;
     margin-bottom: 30px;
-  }
+}
   
-  .card {
+.card {
     width: 100%;    
     height: 100%;          
     display: flex;             
@@ -475,9 +481,9 @@ table, th, td {
     overflow: hidden;             
     margin: 5px;    
     margin-bottom: 20px;             
-  }
+}
   
-  .card-header {
+.card-header {
     color: var(--bgc2);
     text-align: center;
     font-family: var(--century);
@@ -486,69 +492,101 @@ table, th, td {
     border-bottom: 1px solid #4ac796;
     background-color: #a6e8cd;
     padding: 15px 10px;
-  }
+}
   
-  .card-main {
+.card-main {
     display: flex;              
     flex-direction: column;     
     justify-content: center;    
     align-items: center;       
     padding: 15px 0;           
-  }
+}
 
-  .anmelder{
+.anmelder{
       max-width: 70%;
       border-radius: 500px;
-  }
+}
   
-  .material-icons {
+.material-icons {
     font-size: 36px;
     color: #4ac796;
     margin: 5px;
     
-  }
+}
   
-  .main-description {
+.main-description {
     color: #333;
     font-size: 12px;
     text-align: center;
-  }
+}
 
-  p{
+p{
       padding: 0px 10px 0px;
       font-family: var(--century);
       font-size: 20px;
       line-height: 30px;
-  }
+}
  
 
 /* Styling til services-siden */
-.ups {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.b9 {
+    background-image: url(/img/Topfoto-services\ desktop.png);
 }
-.ups > p {
+.b10 {
+    background-image: url(/img/Midtfoto-services.png);
+    min-height: 600px;
+    background-position: bottom;
     color: var(--bgc);
-    font-family: var(--century);
-    font-size: 20px;
-    padding: 10px;
 }
-.ups img {
-    max-width: 95%;
+.b10 > p {
+    padding: 0px 20px 0px 90px;
 }
-.ups > a {
-    margin: 20px;
-    background-color: var(--bgc);
-    color: white;
-    border: none;
+.book_box {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 60px 0;
+}
+.book_snak{
     border-radius: 25px 10px;
-    width: 130px;
-    padding: 20px 0px;
+    font-size: 20px;
+    background-color: #FF7137;
+    color: white;
+    font-family: var(--century);
+    text-decoration: none;
     text-align: center;
+    width: 6rem;
+    padding: 15px;
+    cursor: pointer;
+    right: 0;
+}
+.b11 {
+    background-image: url(/img/Bundfoto-services\ desktop.png);
+    min-height: 500px;
+}
+#prisliste h3 {
+    font-family: var(--century);
+    font-size: 25px;
+    color: var(--bgc);
+    text-align: center;
+}
+.prisliste {
+    display: flex;
+    margin: 10px;
+}
+.rep_pris, .rep_ydelse {
+    width: 50%;
+    color: var(--bgc);
+}
+.rep_pris > p, .rep_ydelse > p {
     font-family: var(--century);
     font-size: 20px;
+    line-height: 30px;
+}
+.rep_pris > p {
+    text-align: right;
+}
+.rep_ydelse > p {
+    text-align: left;
 }
 
 @media screen and (min-width: 800px){
