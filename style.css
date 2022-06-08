@@ -532,6 +532,9 @@ p{
 .b9 {
     background-image: url(/img/Topfoto-services\ desktop.png);
 }
+.b9 > p {
+    padding-top: 230px;
+}
 .b10 {
     background-image: url(/img/Midtfoto-services.png);
     min-height: 600px;
@@ -540,6 +543,7 @@ p{
 }
 .b10 > p {
     padding: 0px 20px 0px 90px;
+    text-align: right;
 }
 .book_box {
     display: flex;
@@ -564,7 +568,7 @@ p{
     min-height: 500px;
 }
 .b11 > p {
-    padding-top: 75px;
+    padding-top: 95px;
 }
 #prisliste h3 {
     font-family: var(--century);
@@ -736,10 +740,41 @@ p{
     footer address{
         font-size: 25px;
     }
-    .ups > p {
+    .b9 {
+        min-height: 600px;
+    }
+    .b9 > p {
+        padding-top: 400px;
+        /* padding-right: 400px; */
+        max-width: 400px;
+        font-size: 25px;
+        line-height: 1.4;
+    }
+    .b10 {
+        background-position: left;
+    }
+    .b10 > p {
+        font-size: 25px;
+        padding-left: 420px;
+        line-height: 1.4;
+    }
+    .book_snak {
         font-size: 25px;
     }
-    .ups > a {
+    .b11 {
+        min-height: 600px;
+    }
+    .b11 > p {
+        font-size: 25px;
+        line-height: 1.4;
+        /* padding-right: 400px; */
+        max-width: 400px;
+    }
+    #prisliste h3 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .rep_pris > p, .rep_ydelse > p {
         font-size: 25px;
     }
 
@@ -919,6 +954,9 @@ p{
 
     #priser{
         margin-top: 0;
+    }
+    .b9 > p {
+        padding-right: 600px;
     }
 
     .center{
