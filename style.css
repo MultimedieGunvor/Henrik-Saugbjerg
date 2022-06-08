@@ -563,6 +563,9 @@ p{
     background-image: url(/img/Bundfoto-services\ desktop.png);
     min-height: 500px;
 }
+.b11 > p {
+    padding-top: 75px;
+}
 #prisliste h3 {
     font-family: var(--century);
     font-size: 25px;
