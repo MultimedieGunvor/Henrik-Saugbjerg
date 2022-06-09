@@ -596,6 +596,128 @@ p{
     text-align: left;
 }
 
+.wrapper {
+    margin: 0 auto;
+    padding: 0 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.hovedindhold {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kursusoplysninger {
+    margin: 25px 20px 25px 20px;
+    padding: 25px;
+    border: #4ac796 1px solid;
+    border-radius: 50px 25px 50px 25px;
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--century);
+}
+
+.oplysningssektion {
+    border: #4ac796 1px solid;
+    border-radius: 50px 25px 50px 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: var(--century);
+}
+
+.oplysningssektion h1{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.oplysningssektion p{
+    padding: 0;
+}
+
+.kursusoplysninger h2, h3{
+    font-family: var(--century);
+    font-size: 20px;
+}
+
+.kursusoplysninger p{
+    font-size: 20px;
+    padding: 0;
+}
+
+.formular {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 5px 0 0;
+    font-family: var(--century);
+}
+
+.checkboks {
+    margin-top: 10px;
+}
+
+.flexsektion {
+    width: 275px;
+    margin: 25px;
+}
+
+.formfelt {
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.overskrift {
+    text-align: center;
+}
+
+.videreknap, .printknap {
+    background-color: #FF7137;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 8rem;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 25px 10px;
+    margin-top: 15px;
+}
+
+.printknap {
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
+.totaldkk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.totalindhold {
+    padding: 10px;
+    border: 1px solid red;
+}
+ */
+.formfelt {
+    width: 275px
+}
+
 @media screen and (min-width: 800px){
     .active{
         height: 100%;
@@ -778,6 +900,68 @@ p{
         font-size: 25px;
     }
 
+    .oplysningssektion {
+        border: #4ac796 1px solid;
+        border-radius: 50px 25px 50px 25px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+    .kursusoplysninger h2, h3{
+        font-size: 25px;
+        font-family: var(--century);
+    }
+
+    .kursusoplysninger p{
+        padding: 0;
+        font-size: 25px;
+    }
+    .oplysningssektion p{
+        font-size: 25px;
+        padding: 0;
+    }
+    
+    .formular {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-width: 500px;
+    }
+    
+    label {
+        display: block;
+        text-align: left;
+        margin: 10px 5px 0 0;
+        font-size: 25px;
+    }
+        .flexsektion {
+        width: 500px;
+        margin: 25px;
+    }
+    .videreknap, .printknap {
+        background-color: #FF7137;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        width: 11rem;
+        padding: 25px;
+        font-size: 2rem;
+        border-radius: 25px 10px;
+        margin-top: 15px;
+    }
+        
+    .formfelt {
+        border: 1px solid lightgray;
+        padding: 5px;
+        font-size: 25px;
+        min-width: 500px;
+    }
+    
 }
 
 @media screen and (min-width: 1200px){
@@ -974,6 +1158,80 @@ p{
         text-align: center;
         padding-left: 30px;
         background-color: #FF7137;
+    }
+    
+    .oplysningssektion {
+        border: #4ac796 1px solid;
+        border-radius: 100px 25px 100px 25px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    .oplysningssektion h1{
+        padding-top: 50px;
+    }
+
+    .kursusoplysninger {
+        margin: 50px 20px 50px 20px;
+        padding: 50px;
+        border: #4ac796 1px solid;
+        border-radius: 100px 25px 100px 25px;
+        width: 100%;
+        font-size: 16px;
+        font-family: var(--century);
+    }
+
+    .kursusoplysninger p{
+        padding: 0;
+        font-size: 25px;
+    }
+    
+    .formular {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-width: 500px;
+    }
+    
+    label {
+        display: block;
+        text-align: left;
+        margin: 10px 5px 0 0;
+        font-size: 25px;
+    }
+    
+    .flexsektion {
+        width: 500px;
+        margin: 25px;
+    }
+    
+    .videreknap, .printknap {
+        background-color: #FF7137;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        width: 11rem;
+        padding: 25px;
+        font-size: 2rem;
+        border-radius: 25px 10px;
+        margin-top: 15px;
+    }
+
+    .printknap {
+        margin-top: 50px;
+    }
+        
+    .formfelt {
+        border: 1px solid lightgray;
+        padding: 5px;
+        font-size: 25px;
+        min-width: 500px;
     }
 
     
