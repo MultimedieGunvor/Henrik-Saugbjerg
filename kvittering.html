@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside | Guldsmed Henrik Saugbjerg</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="print" href="print.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/50eafd25cbb5f88fe7bb5cc77421bb49?family=Freestyle+Script" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+</head>
+
+<body> 
+    <header>
+        <div class="mobileHeader">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+            <a href="index.html" class="active"><img src="/img/Logo-hvid.png" alt="logo"></a>
+            <div id="Links">
+                <a class="RM" onclick="mobileHeader(test='kurserUM')">Kurser</a>
+                <div id="kurserUM">
+                    <a href="kursus.html#Smykkeskole">Den ny smykkeskole</a>
+                    <a href="kursus.html#vaerkstedet">Værkstedet</a>
+                    <a href="kursus.html#priser">Priser</a>
+                    <a href="Kursusbestilling.html">Tilmelding</a>
+                </div>
+                <a class="RM" onclick="mobileHeader(test='servicesUM')">Services</a>
+                <div id="servicesUM">
+                    <a href="services.html">Guldsmedjen</a>
+                    <a href="services.html#specialopgaver">Specialopgaver</a>
+                    <a href="services.html#reparationer">Reparationer</a>
+                    <a href="services.html#prisliste">Prisliste</a>
+                </div>
+                <a class="RM" onclick="mobileHeader(test='SUUM')">Saugbjergs Univers</a>
+                <div id="SUUM">
+                    <a href="om_os.html">Om Henrik Saugbjerg</a>
+                    <a href="om_os.html#galleri">Billedgalleri</a>
+                    <a href="om_os.html#butik">Om butikken</a>
+                </div>
+            </div>
+            <a class="icon" onclick="mobileHeader(test='Links')">
+                <i id="burger" class="fa fa-bars"></i>
+            </a>
+            </div>
+        </div>
+        <div class="desktopHeader">
+            <a class="logo" href="index.html"><img src="/img/Logo-hvid.png" alt="billede"></a>
+            <div class="headerMenu">
+                <div class="header-item">
+                    <img src="img/Sav.svg" alt="billede">
+                        <div class="dropMenu"><p class="RM">Kurser</p>
+                        <div class="dropMenu-content">
+                                <a href="kursus.html#Smykkeskole">Den ny smykkeskole</a>
+                                <a href="kursus.html#vaerkstedet">Værkstedet</a>
+                                <a href="kursus.html#priser">Priser</a>
+                                <a href="Kursusbestilling.html">Tilmelding</a>
+                        </div>
+                    </div>    
+                </div>
+                        
+            <div class="header-item">
+                <img src="img/Ring.svg" alt="billede">
+                    <div class="dropMenu"><p class="RM">Services</p>
+                    <div class="dropMenu-content">
+                            <a href="services.html">Guldsmedjen</a>
+                            <a href="services.html#specialopgaver">Specialopgaver</a>
+                            <a href="services.html#reparationer">Reparationer</a>
+                            <a href="services.html#prisliste">Prisliste</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="header-item">
+                <img src="img/Planet.svg" alt="billede">
+                        <div class="dropMenu"><p class="RM">Saugbjergs Univers</p>
+                        <div class="dropMenu-content">
+                                <a href="om_os.html#">Om Henrik Saugbjerg</a>
+                                <a href="om_os.html#galleri">Billedgalleri</a>
+                                <a href="om_os.html#butik">Om butikken</a>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+    <div class="hovedindhold">
+        <section class="oplysningssektion">
+            <h1 class="overskrift">Vi har regisreret din tilmelding med følgende oplysninger</h1>
+            <form class="formular" id="formular">
+                <div class="oplysninger">
+
+                </div>
+                <button type="submit" class="printknap" id="printknap">Udskriv</button>
+            </form>
+        </section>
+
+        <datalist id="pbliste"></datalist>
+        
+        
+        <aside id="kursusoplysninger" class="kursusoplysninger">
+            <h2>Kursusoplysninger</h2>
+        </aside>
+
+    </div>
+    </div>
+    <script src="kvittering.js"></script>
+</body><footer>
+    <p><a href="mailto:henrik@saugbjerg-guld.dk">henrik@saugbjerg-guld.dk</a></p>
+    <p><a href="tel:+4586751314">Telefon: 86 75 13 14</a></p>
+    <address>Frederiksgade 74F, 8000 Århus C</address>
+    <p>CVR: 12345678</p>
+</footer></html>
