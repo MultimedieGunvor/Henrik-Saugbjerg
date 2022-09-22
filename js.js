@@ -15,7 +15,7 @@ function mobileHeader() {
 
   let kurser = [];
 
-  const kursusinfo = "https://api.jsonbin.io/b/6285fe2025069545a33d2db1/12";
+  const kursusinfo = "https://magnuskingodanielsen.github.io/Guitars/kurser.json";
   async function getKurser() {
       const response = await fetch(kursusinfo);
       const data = await response.json();
